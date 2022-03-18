@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+
+interface parametrosFlechas {
+  tope: number,
+  setPersonajes : Function,
+}
 const Flechas = ({
   tope,
-  setPersonajes,
-}: {
-  tope: number;
-  setPersonajes: Function;
-}): JSX.Element => {
+  setPersonajes
+}: parametrosFlechas): JSX.Element => {
   const [indicador, setIndicador] = useState(1);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const Flechas = ({
             : "text-white text-5xl cursor-pointer transition-colors hover:text-pink-600"
         }
         onClick={() => {
-          setIndicador(indicador - 1);
+          return setIndicador(indicador - 1);
         }}
       >
         &lt;

@@ -5,3 +5,77 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+header{
+    height: 13vh;
+}
+header img{
+    height: 10vh;
+}
+
+/* @media screen and (max-width: 800px){
+    header{
+        height: 100vh;
+        top: -100vh;
+        background: rgba( 41, 41, 41, 0.8 );
+    }
+    .capitulos,.cards,.localizaciones{
+        margin-top: 5vh;
+    }
+    .titulo{
+        display: block;
+        margin-top: 5vh;
+        color: rgb(255, 15, 107);
+    }
+    .headerResponsive{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 6.5vh;
+        right: 5vw;
+        z-index: 1;
+    }
+    .headerResponsive span{
+        width: 3vw;
+        padding: 5px 5px 0;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: white;
+    }
+    .headerResponsive span:nth-child(2){
+        margin: 3px 0;
+    }
+    .derecha{
+        flex-direction: column;
+        top: 20vh;
+        left: 6vw;
+        width: 0;
+        margin: 0;
+    }
+    .centro{
+        margin: 0;
+    }
+    .inicio{
+        top: 13vh;
+        left: 6vw;
+    }
+    header img{
+        position: absolute;
+        top: 1vh;
+        left: 1vw;
+    }
+    .personaje{
+        height: 25vh;
+        width: 80%;
+    }
+    .informacion * {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .personaje{
+        height: 20vh;
+    }
+    .informacion *{
+        font-size: 8px;
+    }
+} */
