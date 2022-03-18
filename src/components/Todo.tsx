@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Card from "./Card";
 import axios from "axios";
+import Flechas from "./Flechas";
 import { useState,useEffect } from "react";
 
 interface Personaje {
@@ -30,12 +31,14 @@ const Todo = (): JSX.Element => {
       setPersonajes(results)
     })
   }, []);
+
   return (
     <>
       <Header />
       <section className="flex flex-wrap w-4/5 justify-center mt-40">
         {personajes.map( (personaje:Personaje) => <Card key={personaje.id} id={personaje.id} nombre={personaje.name} especie={personaje.species} estado={personaje.status} img={personaje.image}/>)}
       </section>
+      <Flechas tope={42} setPersonajes={setPersonajes}/>
       <Footer />
     </>
   );

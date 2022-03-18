@@ -1,6 +1,6 @@
 const Card = ({id,nombre,especie,estado,img}:{id:number, nombre:string,especie:string,estado:string,img:string}):JSX.Element => {
   return (
-    <div className="rounded-2xl overflow-hidden flex flex-col justify-between bg-black/5 shadow-md backdrop-filter border-2 border-gray-400 mb-28 mr-4 w-56">
+    <div className="rounded-2xl overflow-hidden flex flex-col justify-between bg-black/5 shadow-md backdrop-filter border-2 border-gray-400 mb-16 mr-4 w-56">
         <img src={img} alt="Imagen de personaje" className="mb-2"/>
         <h3 className="text-white font-black text-xl ml-2">{nombre}</h3>
         <h4 className="text-white my-2 ml-2">Especie: {especie}</h4>
