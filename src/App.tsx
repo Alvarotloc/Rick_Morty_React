@@ -5,6 +5,7 @@ const App = (): JSX.Element => {
     <>
       <Routes>
         <Route path="/" element={<Todo />}/>
+        <Route path="/:x" element={<Todo />}/>
       </Routes>
     </>
   );
