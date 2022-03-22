@@ -63,7 +63,7 @@ const Todo = (): JSX.Element => {
     return (
       <>
         <Header />
-        <section className="flex flex-col w-4/6 mt-40">
+        <section className="flex flex-col w-3/6 mt-40">
           {localizaciones.map((localizacion:iLocalizacion) => <Localizacion key={localizacion.id} dimension={localizacion.dimension} residents={localizacion.residents} type={localizacion.type} name={localizacion.name}/>)}
         </section>
         <Flechas tope={7} setPersonajes={setPersonajes} setCapitulos={setCapitulos} setLocalizaciones={setLocalizaciones}/>
